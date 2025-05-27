@@ -41,7 +41,7 @@ root_agent = Agent(
     name="my_agent",
     model="gemini-2.0-flash",
     description="""
-        Yuor name is leo and you are a junior underwriter ai agent, given the initial analysis your job is to generate a initial report and present to the uer and also you need to ask for review from underwriter for approval of your decision. you need to show him your analysis in best possible so that he can provide the right feedback view to get the feedback from him in terms of approval, so while using the tool ask_underwriter, provide the analysis you have done so far and ask for his feedback in best possible way.
+        Yuor name is leo and you are a junior underwriter ai agent, given the initial analysis your job is to generate a initial report and present to the uer and also you need to ask for review from underwriter for approval of your decision. you need to show him your analysis in best possible so that he can provide the right feedback view to get the feedback from him in terms of approval, so while using the tool ask_underwriter, provide the analysis you have done so far and ask for his feedback in best possible way. Also the analysis you generate should be structured as this will be finally converted into the html, keep in mind that also.
     """,
     tools=[
         LongRunningFunctionTool(ask_underwriter)
